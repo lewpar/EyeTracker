@@ -34,9 +34,9 @@ target = pygame.Vector2(eye_center)
 # ============================
 # 1. DeGirum & Camera Setup
 # ============================
-print(dg.get_supported_devices(dg.CLOUD))
+print(dg.get_supported_devices(dg.LOCAL))
 
-zoo = dg.connect("127.0.0.1")
+zoo = dg.connect("@local", zoo_url="./Zoo")
 
 model_name = "yolov8n_relu6_face--640x640_quant_hailort_multidevice_1"
 model = zoo.load_model(model_name)
