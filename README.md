@@ -1,3 +1,4 @@
+install dkms before hailo (sudo apt install dkms) // This is required for the pcie driver to properly install from the `hailo-all` package.
 install hailo sdk and driver (sudo apt install hailo-all)
 download and install miniforge (anaconda environment manager)
 create python environment (conda create -n degirum python=3.12)
