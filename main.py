@@ -36,12 +36,12 @@ target = pygame.Vector2(eye_center)
 # ============================
 print(dg.get_supported_devices(dg.LOCAL))
 
-zoo = dg.connect("@local", zoo_url="./Zoo")
+zoo = dg.connect("@local", zoo_url="./zoo")
 
 model_name = "yolov8n_relu6_face--640x640_quant_hailort_multidevice_1"
 model = zoo.load_model(model_name)
 
-cap = cv2.VideoCapture(4)
+cap = cv2.VideoCapture(0)
 if not cap.isOpened():
     print("Cannot open camera")
     pygame.quit()
